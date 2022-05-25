@@ -20,3 +20,16 @@
 #' @author Yongze Song \email{yongze.song@curtin.edu.au}
 #' @keywords dataset trace elements factors
 "sample_vars_sda"
+
+
+#' @title Spatial datasets of the first dimension variables of trace elements.
+#'
+#' @description Spatial datasets of the first dimension variables of trace elements.
+#'
+#' @name sample_vars_fda
+#' @format \code{sample_vars_fda}: A list with 8 elements
+#' @docType data
+#' @author Yongze Song \email{yongze.song@curtin.edu.au}
+#' @keywords dataset trace elements factors
+"sample_vars_fda"
+

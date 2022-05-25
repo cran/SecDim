@@ -25,7 +25,7 @@ obs$Cr_ppm <- log(obs$Cr_ppm)
 krm <- rmvoutlier(obs$Cr_ppm)
 y <- obs$Cr_ppm[-krm]
 x <- list(sample_vars_sda[[1]][-krm, 1:11])
-system.time({ # ~7s
+system.time({ # ~0.01s
   sx <- selectvarsda(y, xlist = x)
 })
 }

@@ -11,6 +11,7 @@
 #' @return A data.frame of selected variables
 #'
 #' @importFrom stats cor
+#' @importFrom methods is
 #'
 #' @examples
 #' data("obs")
@@ -61,7 +62,9 @@ selectvarlm <- function(y, x, ctr.vif = 10){
 
   selected.x.data <- x3[, xk]
 
-  if (class(selected.x.data) != "data.frame"){ # debug: convert a vector to dataframe
+  if (is(selected.x.data, "data.frame")){
+    # debug: convert a vector to dataframe
+    # debug: use is()
     selected.x.data <- data.frame(selected.x.data)
     names(selected.x.data) <- names(x)[xk]
   }
