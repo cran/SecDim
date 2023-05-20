@@ -33,3 +33,13 @@
 #' @keywords dataset trace elements factors
 "sample_vars_fda"
 
+#' @title Spatial grid dataset.
+#'
+#' @description Spatial datasets of explanatory variables at a 500-m resolution.
+#'
+#' @name grids
+#' @format \code{grids}: A data frame of explanatory variables with 68757 rows and 11 columns.
+#' @docType data
+#' @author Yongze Song \email{yongze.song@curtin.edu.au}
+#' @keywords variables grids
+"grids"
